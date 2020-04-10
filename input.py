@@ -1,0 +1,6 @@
+digimap = list(input())
+out = list(map(lambda x: f"{ord(x):03}",digimap))
+final = ''.join(out)
+openfile = open('sensitive.txt','w')
+openfile.write(final)
+openfile.close()
